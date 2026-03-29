@@ -38,3 +38,26 @@ imc.toFixed(2)
 5. Alterar o layout (cores)
 Trocar o tema (na imagem mudou de roxo → laranja)
 Melhorar visual para parecer uma nova versão
+
+
+function calcularIMC(peso, altura) {
+    let alturaM = altura / 100;
+    let imc = peso / (alturaM * alturaM);
+    return imc.toFixed(2);
+}
+
+function classificarIMC(imc) {
+    if (imc < 18.5) return "Magreza";
+    else if (imc < 25) return "Normal";
+    else if (imc < 30) return "Sobrepeso";
+    else return "Obesidade";
+}
+
+// Exemplo
+let peso = 50;
+let altura = 160;
+
+let imc = calcularIMC(peso, altura);
+let classificacao = classificarIMC(imc);
+
+console.log(`IMC: ${imc} - ${classificacao}`);
