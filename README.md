@@ -35,6 +35,8 @@ IMC	Classificação
 Se estiver usando JavaScript:
 
 imc.toFixed(2)
+
+
 ✅ 5. Alterar o layout (cores)
 Trocar o tema (na imagem mudou de roxo → laranja)
 Melhorar visual para parecer uma nova versão
